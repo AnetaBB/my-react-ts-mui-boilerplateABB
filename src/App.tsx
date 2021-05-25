@@ -1,5 +1,6 @@
-import React from 'react';
-import { ThemeProvider, Typography, useTheme } from '@material-ui/core';
+import { ThemeProvider, useTheme } from '@material-ui/core';
+
+import { Container } from 'app/container/Container';
 
 import { useStyles } from './App.styles';
 
@@ -9,7 +10,7 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Typography className={classes.container}>My React Typescript Material-UI Boilerplate</Typography>
+      <Container />
     </ThemeProvider>
   );
 };
